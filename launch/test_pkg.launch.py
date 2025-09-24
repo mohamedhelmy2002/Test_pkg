@@ -12,10 +12,8 @@ def generate_launch_description():
             package='test_pkg',
             executable='gampad_node',
             name='gampad_node'
-        ),
-        Node(
-            package='turtlesim',
-            executable='turtlesim_node',
-            name='turtlesim_node'
-        ),
-    ])
+        )
+        ])
+
+
+    

@@ -13,7 +13,9 @@ class Pubsub(Node):
         # Initialize the parent class (Node) with the name "pubsub"
         super().__init__("pubsub")
         # Create a publisher that publishes String messages
-        self.publisher = self.create_publisher(Twist, "/turtle1/cmd_vel", 10)
+        #self.publisher = self.create_publisher(Twist, "/turtle1/cmd_vel", 10) # for turtle
+        self.publisher = self.create_publisher(Twist, "/cmd_vel", 10) 
+
         freq = 10  # Hz
         period = 1.0 / freq  # seconds
         # Create a timer that calls self.timer_callback every 1.0 seconds
