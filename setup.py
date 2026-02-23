@@ -26,6 +26,7 @@ setup(
             'turt = test_pkg.turt:main',
             'turtle_move = test_pkg.turtle_move:main',
             'gampad_node = test_pkg.gampad_node:main',
+            'camera = test_pkg.camera:main',
         ],
     },
 )
