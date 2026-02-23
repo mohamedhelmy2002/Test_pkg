@@ -34,7 +34,7 @@ class Pubsub(Node):
     # Callback function that runs every time a new message is received
     def callback(self, msg):
         # Print the message contents
-        self.get_logger().info(f"I heard: {msg.data}")
+        # self.get_logger().info(f"I heard: {msg.data}")
         data=msg.data
         # convert string representation of list to actual list
         buttons_str = data.split("Buttons:")[1].split("Axes:")[0].strip()
@@ -82,7 +82,7 @@ class Pubsub(Node):
         msg.angular.z = float(self.z)if self.z is not None else 0.0
 
         self.publisher.publish(msg)
-        self.get_logger().info(f'Publishing: "{msg}"')
+        # self.get_logger().info(f'Publishing: "{msg}"')
 
 def main():
     rclpy.init()

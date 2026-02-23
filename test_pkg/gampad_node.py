@@ -37,7 +37,7 @@ class Talker(Node):
         # Publish the message on the "chatter" topic
         self.publisher.publish(msg)
         # AS PRINT
-        self.get_logger().info(msg.data)
+        #self.get_logger().info(msg.data)
 
 
 
